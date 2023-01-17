@@ -1,0 +1,38 @@
+types:
+    user_avatars:
+        placeholder: "./placeholders/user.png"
+        covers:
+            - contain
+        background_colors:
+            - white
+        original:
+            size: 200x
+            format: avif
+            compression: COMPRESSION_B44A
+            quality: 30
+        sizes:
+            - 200x
+            - 400x (small)
+            - 600x
+        formats:
+            - jpg
+            - png
+            - gif
+        format_options:
+            jpg:
+                related_sizes: [200x, 400x, 600x]
+                compression: COMPRESSION_B44A
+                quality: 30
+    circles:
+        covers:
+            - "*"
+        background_colors:
+            - "*"
+        sizes:
+            - "*"
+placeholder: "./placeholders/1-1.png"
+format_options:
+    jpg:
+        related_sizes: [200x, 400x, 600x]
+        compression: COMPRESSION_B44A
+        quality: 30
